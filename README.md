@@ -30,6 +30,11 @@ Include the transaction ID and a PGP public key. Do not post private contact det
 
 This repo contains a public demo build. The full paid package unlocks local paste-and-analyze behavior for private CI logs.
 
+Product details:
+
+- [Product sheet](public/product-sheet.md)
+- [Launch post](public/launch-post.md)
+
 Sample reports:
 
 - [Runner OOM](public/samples/oom-report.md)
