@@ -8,6 +8,8 @@ The tool turns noisy CI logs into a concise Markdown report with likely cause, o
 
 Solo license: USD 19 equivalent in BTC.
 
+Approximate quote at USD 59,350/BTC on `2026-06-25T18:40:42Z`: `0.00032013 BTC` / `32,013 sats`.
+
 Payment URI:
 
 ```text
@@ -37,6 +39,7 @@ Sample reports:
 Consulting add-ons:
 
 - [CI Failure Triage Consulting](public/consulting.md)
+- [BTC Pricing Guide](public/pricing.md)
 
 GitHub Pages is configured for this repo, but the account-level Pages domain currently redirects to `agentydragon.com`, which is not responding. Until that domain is fixed, use this repository page as the public payment surface.
 

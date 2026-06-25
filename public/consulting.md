@@ -10,6 +10,12 @@ For teams that want a faster fix than a self-serve tool purchase.
 | Recurring failure cleanup | USD 750 equivalent in BTC | Pattern review across recurring failures, owner routing, and prevention notes |
 | Custom failure pattern pack | USD 500 equivalent in BTC | Three deterministic patterns added from redacted logs |
 
+Approximate BTC amounts at USD 59,350/BTC on `2026-06-25T18:40:42Z`:
+
+- Single failure review: `0.00421230 BTC` / `421,230 sats`
+- Custom failure pattern pack: `0.00842460 BTC` / `842,460 sats`
+- Recurring failure cleanup: `0.01263690 BTC` / `1,263,690 sats`
+
 ## Payment
 
 BTC URI:
