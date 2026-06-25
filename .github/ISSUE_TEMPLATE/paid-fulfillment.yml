@@ -11,7 +11,7 @@ body:
 
         `bitcoin:17H6WFD7dtbfQCP6A8Y34Qt3Yui9ehLenD?label=CI%20Failure%20Triage%20Kit`
 
-        Do not post private contact details in the issue. A maintainer can verify the transaction on-chain and coordinate delivery.
+        Do not post private contact details in the issue. Include a PGP public key so the paid zip can be attached back to the issue as an encrypted file.
   - type: input
     id: txid
     attributes:
@@ -28,6 +28,17 @@ body:
         - Solo license
         - Team license
         - Consulting add-on
+    validations:
+      required: true
+  - type: textarea
+    id: pgp_public_key
+    attributes:
+      label: PGP public key
+      description: Paste an ASCII-armored PGP public key. This is public by design and will be used to encrypt the paid zip.
+      placeholder: |
+        -----BEGIN PGP PUBLIC KEY BLOCK-----
+        ...
+        -----END PGP PUBLIC KEY BLOCK-----
     validations:
       required: true
   - type: textarea

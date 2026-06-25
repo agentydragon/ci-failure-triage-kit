@@ -18,7 +18,7 @@ After payment, open a fulfillment request:
 
 https://github.com/agentydragon/ci-failure-triage-kit/issues/new?template=paid-fulfillment.yml
 
-Include the transaction ID. Do not post private contact details or private logs in a public issue.
+Include the transaction ID and a PGP public key. Do not post private contact details or private logs in a public issue. The paid zip can be returned as a PGP-encrypted attachment.
 
 ## Demo
 
