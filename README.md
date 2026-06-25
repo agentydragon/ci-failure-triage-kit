@@ -14,6 +14,10 @@ Payment URI:
 bitcoin:17H6WFD7dtbfQCP6A8Y34Qt3Yui9ehLenD?label=CI%20Failure%20Triage%20Kit
 ```
 
+Scan:
+
+![BTC payment QR](https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=bitcoin%3A17H6WFD7dtbfQCP6A8Y34Qt3Yui9ehLenD%3Flabel%3DCI%2520Failure%2520Triage%2520Kit)
+
 After payment, open a fulfillment request:
 
 https://github.com/agentydragon/ci-failure-triage-kit/issues/new?template=paid-fulfillment.yml
