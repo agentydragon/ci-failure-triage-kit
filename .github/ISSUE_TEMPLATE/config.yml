@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Buy and request fulfillment
+    url: https://github.com/agentydragon/ci-failure-triage-kit/issues/new?template=paid-fulfillment.yml
+    about: Pay the BTC invoice URI, then open a fulfillment request with the transaction ID.

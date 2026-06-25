@@ -1,0 +1,39 @@
+name: Paid fulfillment request
+description: Request delivery of the full CI Failure Triage Kit after BTC payment.
+title: "Fulfillment request: BTC txid"
+labels:
+  - fulfillment
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open this after paying the public BTC URI:
+
+        `bitcoin:17H6WFD7dtbfQCP6A8Y34Qt3Yui9ehLenD?label=CI%20Failure%20Triage%20Kit`
+
+        Do not post private contact details in the issue. A maintainer can verify the transaction on-chain and coordinate delivery.
+  - type: input
+    id: txid
+    attributes:
+      label: Bitcoin transaction ID
+      description: Paste the transaction ID for the payment.
+      placeholder: "e.g. 4b0..."
+    validations:
+      required: true
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      options:
+        - Solo license
+        - Team license
+        - Consulting add-on
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Optional public notes. Do not include secrets, private logs, or private contact details.
+    validations:
+      required: false

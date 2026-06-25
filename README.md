@@ -14,7 +14,11 @@ Payment URI:
 bitcoin:17H6WFD7dtbfQCP6A8Y34Qt3Yui9ehLenD?label=CI%20Failure%20Triage%20Kit
 ```
 
-After payment, contact the seller with the transaction ID for manual fulfillment of the full local app package.
+After payment, open a fulfillment request:
+
+https://github.com/agentydragon/ci-failure-triage-kit/issues/new?template=paid-fulfillment.yml
+
+Include the transaction ID. Do not post private contact details or private logs in a public issue.
 
 ## Demo
 
