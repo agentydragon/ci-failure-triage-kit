@@ -28,6 +28,16 @@ Include the transaction ID and a PGP public key. Do not post private contact det
 
 This repo contains a public demo build. The full paid package unlocks local paste-and-analyze behavior for private CI logs.
 
+Sample reports:
+
+- [Runner OOM](public/samples/oom-report.md)
+- [Registry 503](public/samples/network-report.md)
+- [Credential failure](public/samples/permission-report.md)
+
+Consulting add-ons:
+
+- [CI Failure Triage Consulting](public/consulting.md)
+
 GitHub Pages is configured for this repo, but the account-level Pages domain currently redirects to `agentydragon.com`, which is not responding. Until that domain is fixed, use this repository page as the public payment surface.
 
 ## Privacy
