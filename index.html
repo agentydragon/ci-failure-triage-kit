@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CI Failure Triage Kit</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">CI Failure Triage Kit</p>
+          <h1>Turn noisy CI logs into a useful failure report.</h1>
+          <p class="subhead">Local-only triage for sensitive build output, with copy-ready Markdown reports.</p>
+        </div>
+        <div class="purchase-box" aria-label="Purchase options">
+          <div>
+            <span class="price">$19</span>
+            <span class="price-note">solo license</span>
+          </div>
+          <a class="buy-button" href="#" id="checkoutLink" aria-disabled="true">Buy kit</a>
+        </div>
+      </header>
+
+      <section class="proof-strip" aria-label="Product highlights">
+        <div>
+          <strong>Runs locally</strong>
+          <span>No log uploads or accounts required.</span>
+        </div>
+        <div>
+          <strong>10 failure classes</strong>
+          <span>Memory, disk, auth, network, tests, Bazel, and more.</span>
+        </div>
+        <div>
+          <strong>Refund-friendly</strong>
+          <span>Low-risk purchase for the next few failures.</span>
+        </div>
+      </section>
+
+      <div id="demoNotice" class="demo-notice" hidden>
+        Public demo mode uses the bundled sample log. Buy the kit to run it locally on private CI logs.
+      </div>
+
+      <section class="workspace" aria-label="CI log triage workspace">
+        <div class="pane input-pane">
+          <div class="pane-head">
+            <div>
+              <h2>Log Input</h2>
+              <p>Paste a failed GitHub Actions, Buildkite, GitLab, Bazel, pytest, npm, or cargo log.</p>
+            </div>
+            <button type="button" id="sampleButton">Sample</button>
+          </div>
+          <textarea id="logInput" spellcheck="false" placeholder="Paste CI log output here"></textarea>
+          <div class="actions">
+            <button type="button" id="analyzeButton">Analyze</button>
+            <button type="button" id="clearButton" class="secondary">Clear</button>
+          </div>
+        </div>
+
+        <div class="pane report-pane">
+          <div class="pane-head">
+            <div>
+              <h2>Report</h2>
+              <p id="summaryLine">No log analyzed yet.</p>
+            </div>
+            <button type="button" id="copyButton" class="secondary">Copy Markdown</button>
+          </div>
+
+          <div class="stats" aria-label="analysis summary">
+            <div>
+              <span id="findingCount">0</span>
+              <label>findings</label>
+            </div>
+            <div>
+              <span id="signalCount">0</span>
+              <label>signal lines</label>
+            </div>
+            <div>
+              <span id="confidenceScore">0%</span>
+              <label>confidence</label>
+            </div>
+          </div>
+
+          <div id="findings" class="findings empty-state">
+            <p>Paste a log and run analysis to generate a report.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <template id="findingTemplate">
+      <article class="finding">
+        <div class="finding-title">
+          <span class="badge"></span>
+          <h3></h3>
+        </div>
+        <p class="finding-detail"></p>
+        <dl>
+          <div>
+            <dt>Likely owner</dt>
+            <dd class="owner"></dd>
+          </div>
+          <div>
+            <dt>Next action</dt>
+            <dd class="action"></dd>
+          </div>
+        </dl>
+        <pre><code></code></pre>
+      </article>
+    </template>
+
+    <script src="site-config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
